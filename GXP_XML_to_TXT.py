@@ -21,7 +21,6 @@ for child in root.iter():
 
 f1.close()
 
-num_lines = sum(1 for line in open(/Users/chris/Desktop/temp.txt"))
 import fileinput
 
 with fileinput.FileInput("/Users/chris/Desktop/temp.txt", inplace=True) as file:
