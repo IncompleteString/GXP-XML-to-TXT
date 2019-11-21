@@ -2,7 +2,7 @@ XML_File = str('/Users/chris/Downloads/cfg000B82A8AC88.xml')
 
 
 import xml.etree.ElementTree as ET
-f1=open("/Users/chris/Desktop/temp.txt",'w+')
+f1=open("/temp.txt",'w+')
 tree = ET.parse(XML_File)
 root = tree.getroot()
 root.tag 
@@ -23,6 +23,6 @@ f1.close()
 
 import fileinput
 
-with fileinput.FileInput("/Users/chris/Desktop/temp.txt", inplace=True) as file:
+with fileinput.FileInput("/temp.txt", inplace=True) as file:
 	for line in file:
 		print(line.replace("None","0"), end='')
